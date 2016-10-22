@@ -1,10 +1,18 @@
 {
-  "name": "jshacks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "boilerplate",
+  "version": "0.1.0",
+  "description": "A JSHacks boilerplate for setting up projects in a consistent way",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "release": "echo \"Error: release system is not configured\" && exit 1",
+    "lint": "echo \"Error: linting system is not configured\" && exit 1",
+    "build": "echo \"Error: build system is not configured\" && exit 1",
+    "bump-version": "echo \"Error: bump-version system is not configured\" && exit 1",
   },
   "repository": {
     "type": "git",
@@ -24,5 +32,22 @@
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-inject": "^4.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshacks/boilerplate.git"
+  },
+  "keywords": [
+    "jshacks",
+    "boilerplate",
+    "oss",
+    "contributing",
+    "community"
+  ],
+  "author": "JSHacks <contact@jshacks.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jshacks/boilerplate/issues"
+  },
+  "homepage": "https://github.com/jshacks/boilerplate#readme"
 }
