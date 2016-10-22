@@ -16,26 +16,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jshacks/challenge_public_tracker.git"
+    "url": "git+https://github.com/jshacks/boilerplate.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "JSHacks <contact@jshacks.io>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jshacks/challenge_public_tracker/issues"
+    "url": "https://github.com/jshacks/boilerplate/issues"
   },
-  "homepage": "https://github.com/jshacks/challenge_public_tracker#readme",
+  "homepage": "https://github.com/jshacks/boilerplate#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-inject": "^4.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jshacks/boilerplate.git"
   },
   "keywords": [
     "jshacks",
@@ -43,11 +40,5 @@
     "oss",
     "contributing",
     "community"
-  ],
-  "author": "JSHacks <contact@jshacks.io>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jshacks/boilerplate/issues"
-  },
-  "homepage": "https://github.com/jshacks/boilerplate#readme"
+  ]
 }

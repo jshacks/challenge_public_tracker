@@ -1,8 +1,14 @@
 angular.module('publicTracker', [
     'ui.router',
-    'ngToast'
-]);
+    'ngToast',
+    'satellizer' 
+])
 
+.config(['$authProvider', function($authProvider) {
+  $authProvider.facebook({
+    clientId: '1148760941883212'
+  });
+}]);
 // angular.module('publicTracker').config(['ngToastProvider', function (ngToastProvider) {
 //     ngToastProvider.configure({
 //         dismissOnTimeout: true,

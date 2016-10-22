@@ -3,12 +3,16 @@
 
     angular
         .module('publicTracker')
-        .controller('LoginCtrl', ['api', '$state', 'ngToast', 'ConfigService', LoginCtrl]);
+        .controller('LoginCtrl', ['api', '$state', 'ngToast', 'ConfigService', '$auth', LoginCtrl]);
 
-    function LoginCtrl (api, $state, ngToast, ConfigService) {
+    function LoginCtrl (api, $state, ngToast, ConfigService, $auth) {
         var self = this;
 
-        console.log('LoginCtrl');
+        // console.log('LoginCtrl');
+    
+        self.authenticate = function(provider) {
+          $auth.authenticate(provider);
+        };
     }
 
 } ());
