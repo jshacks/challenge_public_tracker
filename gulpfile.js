@@ -17,6 +17,7 @@ gulp.task('copyLibs', function () {
         './bower_components/angular-animate/angular-animate.min.js',
         './bower_components/ngToast/dist/ngToast.js',
         './bower_components/angular-ui-router/release/angular-ui-router.js',
+        './bower_components/ngmap/build/scripts/ng-map.min.js',
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
         './bower_components/components-font-awesome/css/font-awesome.min.css'
 
@@ -47,7 +48,8 @@ gulp.task('inject', function () {
         libsDir + 'angular-sanitize.min.js',
         libsDir + 'angular-animate.min.js',
         libsDir + 'ngToast.js',
-        libsDir + 'angular-ui-router.js'
+        libsDir + 'angular-ui-router.js',
+        libsDir + 'ng-map.min.js'
     ]);
 
     var app = gulp.src('./public/app/**/*.js');

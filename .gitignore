@@ -3,6 +3,7 @@ bower_components
 node_modules
 public/src/libs
 public/src/fonts
+public/src/libs
 
 
 # Logs

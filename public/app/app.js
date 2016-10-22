@@ -1,6 +1,7 @@
 angular.module('publicTracker', [
     'ui.router',
-    'ngToast'
+    'ngToast',
+    'ngMap'
 ]);
 
 // angular.module('publicTracker').config(['ngToastProvider', function (ngToastProvider) {
