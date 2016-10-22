@@ -8,19 +8,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <a class="navbar-brand" href="#/app">Public Trackers</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">About</a>
+                    <a ui-sref="app.agency-list">Agency</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a ui-sref="app.services-list">Services</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a ui-sref="app.tenders-list">Tenders</a>
+                </li>
+                <li>
+                    <a ui-sref="app.contract-list">Contract</a>
+                </li>
+                <li>
+                    <a ui-sref="app.contractor-list">Contractor</a>
                 </li>
             </ul>
         </div>
@@ -29,7 +35,7 @@
     <!-- /.container -->
 </nav>
 
-<!-- Page Content -->
+
 <div class="container">
 
     <div class="row">
@@ -50,100 +56,9 @@
                 </div>
                 <!--<i class="fa fa-times-circle-o" aria-hidden="true"></i>-->
             </div>
-            <div class="middle-container">
-                <div class="filter-block">
-                    <span>View: <Span>Top</Span> <span>New</span></span>
-                </div>
-            </div>
-            <div class="table-container">
-                <div class="table-row">
-                    <i class="fa fa-arrow-circle-up arrow" aria-hidden="true"></i>
-                    <div class="main-info">
-                        <img  class="table-image" src="public/src/images/images.jpg" alt="user1">
-                        <div class="block-after-image">
-                            <div class="first-line-content">
-                                <h4>Omega Seamaster Planet Ocean Review</h4>
-                                <span>theclockarm.com <span class="currency">$10k+</span></span>
-                            </div>
-                            <div class="second-line-content">
-                                <span><b>The Clock Arm</b></span>
-                                <span>1 point 4 days ago</span>
-                                <span><b>1 Comments</b></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icons-at-right">
-                        <img src="public/src/images/images3.jpg" alt="">
-                        <img src="public/src/images/images.jpg" alt="">
-                        <i class="fa fa-comment-o comment-icon" style="position: relative;top: 4px;margin-right: 10px;" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="table-row">
-                    <i class="fa fa-arrow-circle-up arrow" aria-hidden="true"></i>
-                    <div class="main-info">
-                        <img  class="table-image" src="public/src/images/images.jpg" alt="user1">
-                        <div class="block-after-image">
-                            <div class="first-line-content">
-                                <h4>Omega Seamaster Planet Ocean Review</h4>
-                                <span>theclockarm.com <span class="currency">$10k+</span></span>
-                            </div>
-                            <div class="second-line-content">
-                                <span><b>The Clock Arm</b></span>
-                                <span>1 point 4 days ago</span>
-                                <span><b>1 Comments</b></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icons-at-right">
-                        <img src="public/src/images/images3.jpg" alt="">
-                        <img src="public/src/images/images.jpg" alt="">
-                        <i class="fa fa-comment-o comment-icon" style="position: relative; top: -8px;" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="table-row">
-                    <i class="fa fa-arrow-circle-up arrow" aria-hidden="true"></i>
-                    <div class="main-info">
-                        <img  class="table-image" src="public/src/images/images.jpg" alt="user1">
-                        <div class="block-after-image">
-                            <div class="first-line-content">
-                                <h4>Omega Seamaster Planet Ocean Review</h4>
-                                <span>theclockarm.com <span class="currency">$10k+</span></span>
-                            </div>
-                            <div class="second-line-content">
-                                <span><b>The Clock Arm</b></span>
-                                <span>1 point 4 days ago</span>
-                                <span><b>1 Comments</b></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icons-at-right">
-                        <img src="public/src/images/images3.jpg" alt="">
-                        <img src="public/src/images/images.jpg" alt="">
-                        <i class="fa fa-comment-o comment-icon" style="position: relative; top: -8px;" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
         </main>
-
-        </div>
-
     </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Footer -->
-    <!--<footer>-->
-        <!--<div class="row">-->
-            <!--<div class="col-lg-12">-->
-                <!--<p>Copyright &copy; Your Website 2014</p>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--&lt;!&ndash; /.row &ndash;&gt;-->
-    <!--</footer>-->
-
-
 </div>
-<!-- /.container -->
+
 
 <div ui-view></div>
