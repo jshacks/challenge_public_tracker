@@ -8,10 +8,12 @@
     function api ($http) {
         var api = {};
 
+        api.apiUrl = 'http://jfvgytocee.localtunnel.me/';
+
         api.get = function get (url) {
             var request = $http({
                 method: 'GET',
-                url: url,
+                url: api.apiUrl + url,
                 headers: {
                     'Content-type': 'application/json'
                 }
@@ -23,7 +25,7 @@
         api.post = function post (url, data) {
             var request = $http({
                 method: 'POST',
-                url: url,
+                url: api.apiUrl + url,
                 data: data,
                 headers: {
                     'Content-type': 'application/json'
@@ -36,7 +38,7 @@
         api.put = function put (url, data) {
             var request = $http({
                 method: 'PUT',
-                url: url,
+                url: api.apiUrl + url,
                 data: data,
                 headers: {
                     'Content-type': 'application/json'
@@ -49,7 +51,7 @@
         api.delete = function deleteRequest (url, data) {
             var request = $http({
                 method: 'DELETE',
-                url: url,
+                url: api.apiUrl + url,
                 data: data,
                 headers: {
                     'Content-type': 'application/json'
