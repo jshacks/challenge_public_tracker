@@ -12,6 +12,10 @@ gulp.task('clean', function () {
 gulp.task('copyLibs', function () {
     var libs = [
         './bower_components/angular/angular.js',
+        './bower_components/underscore/underscore.js',
+        './bower_components/angular-sanitize/angular-sanitize.min.js',
+        './bower_components/angular-animate/angular-animate.min.js',
+        './bower_components/ngToast/dist/ngToast.js',
         './bower_components/angular-ui-router/release/angular-ui-router.js'
     ];
 
@@ -29,6 +33,9 @@ gulp.task('inject', function () {
     var jsLibs = gulp.src([
         libsDir + 'underscore.js',
         libsDir + 'angular.js',
+        libsDir + 'angular-sanitize.min.js',
+        libsDir + 'angular-animate.min.js',
+        libsDir + 'ngToast.js',
         libsDir + 'angular-ui-router.js'
     ]);
 
