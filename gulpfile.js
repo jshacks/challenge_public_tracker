@@ -17,7 +17,8 @@ gulp.task('copyLibs', function () {
         './bower_components/angular-animate/angular-animate.min.js',
         './bower_components/ngToast/dist/ngToast.js',
         './bower_components/angular-ui-router/release/angular-ui-router.js',
-        './bower_components/satellizer/satellizer.min.js'
+        './bower_components/satellizer/satellizer.min.js',
+        './bower_components/bootstrap/dist/css/bootstrap.min.css'
     ];
 
     gulp.src(libs)

@@ -1,8 +1,7 @@
 var db = require('../../db/mongodb');
 
-
 exports.getAll = function(req, res, next) {
-  db.get('contract').find()
+  db.get('contracts').find()
   .then(function(data) {
     res.json(data);
   }).catch(function(err) {

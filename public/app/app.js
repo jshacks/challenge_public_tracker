@@ -6,7 +6,9 @@ angular.module('publicTracker', [
 
 .config(['$authProvider', function($authProvider) {
   $authProvider.facebook({
-    clientId: '1148760941883212'
+    clientId: '1148760941883212',
+    url: '/auth/facebook',
+    responseType: 'code'
   });
 }]);
 // angular.module('publicTracker').config(['ngToastProvider', function (ngToastProvider) {

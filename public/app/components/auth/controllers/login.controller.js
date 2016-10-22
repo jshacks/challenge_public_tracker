@@ -11,7 +11,12 @@
         // console.log('LoginCtrl');
     
         self.authenticate = function(provider) {
-          $auth.authenticate(provider);
+          $auth.authenticate(provider).then(function(response) {
+            console.log('response', response)
+            $auth.setToken(response.data.access_token);
+
+            console.log('is authenticated?', $auth.isAuthenticated());
+          })
         };
     }
 
