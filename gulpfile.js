@@ -28,7 +28,7 @@ gulp.task('inject', function () {
 
     var target = gulp.src('./public/index.html');
 
-    var css = gulp.src('./public/css/*.css');
+    var css = gulp.src('./public/src/css/*.css');
 
     var jsLibs = gulp.src([
         libsDir + 'underscore.js',
