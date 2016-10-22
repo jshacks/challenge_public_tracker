@@ -7,6 +7,8 @@ app.use('/public', express.static(__dirname + './../public'));
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
+require('./db/mongodb');
+
 // routes
 require('./routes').routes(app);
 
