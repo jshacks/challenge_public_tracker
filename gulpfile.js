@@ -17,15 +17,25 @@ gulp.task('copyLibs', function () {
         './bower_components/angular-animate/angular-animate.min.js',
         './bower_components/ngToast/dist/ngToast.js',
         './bower_components/angular-ui-router/release/angular-ui-router.js',
-        './bower_components/bootstrap/dist/css/bootstrap.min.css'
+        './bower_components/bootstrap/dist/css/bootstrap.min.css',
+        './bower_components/components-font-awesome/css/font-awesome.min.css'
+
+    ];
+
+    var fonts = [
+        './bower_components/components-font-awesome/fonts/*.*'
     ];
 
     gulp.src(libs)
-        .pipe(gulp.dest('./public/libs'));
+        .pipe(gulp.dest('./public/src/libs'));
+
+    gulp.src(fonts)
+        .pipe(gulp.dest('./public/src/fonts'));
 });
 
 gulp.task('inject', function () {
-    var libsDir = './public/libs/';
+    var libsDir = './public/src/libs/';
+    var fontsLibsDir = './public/src/fonts';
 
     var target = gulp.src('./public/index.html');
 
@@ -43,6 +53,8 @@ gulp.task('inject', function () {
     var app = gulp.src('./public/app/**/*.js');
 
     var cssLibs = gulp.src(libsDir + '*.css');
+
+    var fonts = gulp.src(fontsLibsDir + '*.*');
 
     return target.pipe(inject(jsLibs, {
         relative: false,
