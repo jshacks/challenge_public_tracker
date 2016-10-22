@@ -1,53 +1,50 @@
 {
-  "name": "boilerplate",
-  "version": "0.1.0",
-  "description": "A JSHacks boilerplate for setting up projects in a consistent way",
-  "main": "src/index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/www",
-    "release": "echo \"Error: release system is not configured\" && exit 1",
-    "lint": "echo \"Error: linting system is not configured\" && exit 1",
-    "build": "echo \"Error: build system is not configured\" && exit 1",
-    "bump-version": "echo \"Error: bump-version system is not configured\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jshacks/challenge_public_tracker.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jshacks/challenge_public_tracker/issues"
-  },
-  "homepage": "https://github.com/jshacks/challenge_public_tracker#readme",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-inject": "^4.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jshacks/boilerplate.git"
-  },
-  "keywords": [
-    "jshacks",
-    "boilerplate",
-    "oss",
-    "contributing",
-    "community"
-  ],
-  "author": "JSHacks <contact@jshacks.io>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jshacks/boilerplate/issues"
-  },
-  "homepage": "https://github.com/jshacks/boilerplate#readme"
+    "name": "boilerplate",
+    "version": "0.1.0",
+    "description": "A JSHacks boilerplate for setting up projects in a consistent way",
+    "main": "src/index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ./bin/www",
+        "release": "echo \"Error: release system is not configured\" && exit 1",
+        "lint": "echo \"Error: linting system is not configured\" && exit 1",
+        "build": "echo \"Error: build system is not configured\" && exit 1",
+        "bump-version": "echo \"Error: bump-version system is not configured\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jshacks/boilerplate.git"
+    },
+    "author": "JSHacks <contact@jshacks.io>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jshacks/boilerplate/issues"
+    },
+    "homepage": "https://github.com/jshacks/boilerplate#readme",
+    "dependencies": {
+        "async": "^2.1.2",
+        "body-parser": "^1.15.2",
+        "chromedriver": "^2.24.1",
+        "csv-parse": "^1.1.7",
+        "express": "^4.14.0",
+        "request": "^2.75.0",
+        "request-promise": "^4.1.1",
+        "selenium-webdriver": "^3.0.0-beta-3",
+        "underscore": "^1.8.3"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-clean": "^0.3.2",
+        "gulp-inject": "^4.1.0"
+    },
+    "keywords": [
+        "jshacks",
+        "boilerplate",
+        "oss",
+        "contributing",
+        "community"
+    ]
 }
