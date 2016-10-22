@@ -1,20 +1,28 @@
 {
   "name": "jshacks",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshacks/challenge_public_tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshacks/challenge_public_tracker/issues"
+  },
+  "homepage": "https://github.com/jshacks/challenge_public_tracker#readme",
   "dependencies": {
-    "body-parser": "~1.13.2",
-    "cheerio": "^0.22.0",
-    "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
-    "express": "~4.13.1",
-    "fs-promise": "^0.5.0",
-    "morgan": "~1.6.1",
-    "node-csv": "^0.1.2",
-    "request-promise": "^4.1.1",
-    "serve-favicon": "~2.3.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-inject": "^4.1.0"
   }
 }
