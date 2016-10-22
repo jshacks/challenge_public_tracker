@@ -23,7 +23,7 @@ input:hover {
     margin-top: 0;
 }
 
-.header-container {
+.header-container, .header-title {
     padding: 30px 0 22px;
     background: rgba(255,255,255,0.7);
     -webkit-border-radius: 5px;
