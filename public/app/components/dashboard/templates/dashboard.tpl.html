@@ -1,5 +1,5 @@
 <div map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyADGllVlV8tg_15W0yLPAx8tcEfYvsjvRc">
-    <ng-map id="dashboard-map" style="height: 500px;" center="47, 29" zoom="8" min-zoom="7" class="map" disable-default-u-i="true" zoom-to-include-markers="auto"
+    <ng-map id="dashboard-map" style="height: 500px;" center="47, 29" zoom="8" class="map" disable-default-u-i="true" zoom-to-include-markers="auto"
             styles="[{'featureType':'administrative','elementType':'labels.text.fill','stylers':[{'color':'#444444'}]},
             {'featureType':'landscape','elementType':'all','stylers':[{'color':'#f2f2f2'}]},
             {'featureType':'poi', 'elementType':'all','stylers':[{'visibility':'off'}]},
@@ -24,5 +24,21 @@
                 <!--<a href="#" ng-click="dashboard.clicked()">Click Here</a>-->
             </div>
         </info-window>
+        <!--<marker ng-repeat="marker in dashboard.markers"-->
+                <!--id="{{marker.id}}"-->
+                <!--position="{{marker.position}}"-->
+                <!--title="{{marker.title}}"-->
+                <!--on-click="dashboard.showDetail(marker)">-->
+        <!--</marker>-->
+        <!--<info-window id="marker-info">-->
+            <!--<div id="info-content">-->
+                <!--id: {{dashboard.point.id}}<br/>-->
+                <!--name: {{dashboard.point.title}}<br/>-->
+                <!--scheme: {{dashboard.point.scheme}}<br/>-->
+                <!--telephone: {{dashboard.point.telephone}}<br/>-->
+                <!--email: {{dashboard.point.email}}<br/>-->
+                <!--&lt;!&ndash;<a href="#" ng-click="dashboard.clicked()">Click Here</a>&ndash;&gt;-->
+            <!--</div>-->
+        <!--</info-window>-->
     </ng-map>
 </div>
