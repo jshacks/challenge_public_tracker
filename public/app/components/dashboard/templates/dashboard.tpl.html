@@ -8,22 +8,6 @@
             {'featureType':'road.arterial','elementType':'labels.icon','stylers':[{'visibility':'off'}]},
             {'featureType':'transit','elementType':'all','stylers':[{'visibility':'off'}]},
             {'featureType':'water','elementType':'all','stylers':[{'color':'#46bcec'},{'visibility':'on'}]}]">
-        <marker ng-repeat="marker in dashboard.markers"
-                id="{{marker.id}}"
-                position="{{marker.position}}"
-                title="{{marker.title}}"
-                on-click="dashboard.showDetail(marker)">
-        </marker>
-        <info-window id="marker-info">
-            <div id="info-content">
-                id: {{dashboard.point.id}}<br/>
-                name: {{dashboard.point.title}}<br/>
-                Position 1: {{dashboard.point.position}}<br/>
-                Position 2: {{anchor.getPosition()}}<br/>
-                Position 3: {{dashboard.map.markers[dashboard.point.id].getPosition()}}<br/>
-                <!--<a href="#" ng-click="dashboard.clicked()">Click Here</a>-->
-            </div>
-        </info-window>
         <!--<marker ng-repeat="marker in dashboard.markers"-->
                 <!--id="{{marker.id}}"-->
                 <!--position="{{marker.position}}"-->
@@ -34,11 +18,27 @@
             <!--<div id="info-content">-->
                 <!--id: {{dashboard.point.id}}<br/>-->
                 <!--name: {{dashboard.point.title}}<br/>-->
-                <!--scheme: {{dashboard.point.scheme}}<br/>-->
-                <!--telephone: {{dashboard.point.telephone}}<br/>-->
-                <!--email: {{dashboard.point.email}}<br/>-->
+                <!--Position 1: {{dashboard.point.position}}<br/>-->
+                <!--Position 2: {{anchor.getPosition()}}<br/>-->
+                <!--Position 3: {{dashboard.map.markers[dashboard.point.id].getPosition()}}<br/>-->
                 <!--&lt;!&ndash;<a href="#" ng-click="dashboard.clicked()">Click Here</a>&ndash;&gt;-->
             <!--</div>-->
         <!--</info-window>-->
+        <marker ng-repeat="marker in dashboard.markers"
+                id="{{marker.id}}"
+                position="{{marker.position}}"
+                title="{{marker.title}}"
+                on-click="dashboard.showDetail(marker)">
+        </marker>
+        <info-window id="marker-info">
+            <div id="info-content">
+                id: {{dashboard.point.id}}<br/>
+                name: {{dashboard.point.title}}<br/>
+                scheme: {{dashboard.point.scheme}}<br/>
+                telephone: {{dashboard.point.telephone}}<br/>
+                email: {{dashboard.point.email}}<br/>
+                <!--<a href="#" ng-click="dashboard.clicked()">Click Here</a>-->
+            </div>
+        </info-window>
     </ng-map>
 </div>
