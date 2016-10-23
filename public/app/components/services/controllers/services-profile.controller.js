@@ -3,12 +3,14 @@
 
     angular
         .module('publicTracker')
-        .controller('ServicesProfileCtrl', ['api', '$state', 'ngToast', 'ConfigService', ServicesProfileCtrl]);
+        .controller('ServicesProfileCtrl', ['api', '$state', 'ngToast', 'ConfigService', '$stateParams', ServicesProfileCtrl]);
 
-    function ServicesProfileCtrl (api, $state, ngToast, ConfigService) {
+    function ServicesProfileCtrl (api, $state, ngToast, ConfigService, $stateParams) {
         var self = this;
 
-        console.log('ServicesProfileCtrl');
+        self.id = $stateParams.id;
+
+        console.log('ServicesProfileCtrl', self.id);
     }
 
 } ());

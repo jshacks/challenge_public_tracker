@@ -3,12 +3,14 @@
 
     angular
         .module('publicTracker')
-        .controller('TendersProfileCtrl', ['api', '$state', 'ngToast', 'ConfigService', TendersProfileCtrl]);
+        .controller('TendersProfileCtrl', ['api', '$state', 'ngToast', 'ConfigService', '$stateParams', TendersProfileCtrl]);
 
-    function TendersProfileCtrl (api, $state, ngToast, ConfigService) {
+    function TendersProfileCtrl (api, $state, ngToast, ConfigService, $stateParams) {
         var self = this;
 
-        console.log('TendersProfileCtrl');
+        self.id = $stateParams.id;
+
+        console.log('TendersProfileCtrl', self.id);
     }
 
 } ());

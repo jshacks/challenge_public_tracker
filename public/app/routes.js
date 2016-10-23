@@ -46,38 +46,78 @@
                 templateUrl: '/public/app/components/agency/templates/agency-list.tpl.html'
             })
             .state('app.agencies.profile', {
-                url: '/agency/:id',
+                url: '/profile/:id',
                 templateUrl: '/public/app/components/agency/templates/agency-profile.tpl.html',
                 controller: 'AgencyProfileCtrl',
                 controllerAs: 'profile'
             })
 
-            .state('app.contract-list', {
-                url: '/contract-list',
-                templateUrl: '/public/app/components/contract/templates/contract-list.tpl.html',
+            .state('app.contracts', {
+                url: '/contracts',
+                templateUrl: '/public/app/components/contract/templates/contracts.tpl.html',
                 controller: 'ContractListCtrl',
                 controllerAs: 'contract'
             })
+            .state('app.contracts.list', {
+                url: '/list',
+                templateUrl: '/public/app/components/contract/templates/contract-list.tpl.html'
+            })
+            .state('app.contracts.profile', {
+                url: '/profile/:id',
+                templateUrl: '/public/app/components/contract/templates/contract-profile.tpl.html',
+                controller: 'ContractProfileCtrl',
+                controllerAs: 'profile'
+            })
 
-            .state('app.contractor-list', {
-                url: '/contractor-list',
-                templateUrl: '/public/app/components/contractors/templates/contractor-list.tpl.html',
+            .state('app.contractors', {
+                url: '/contractors',
+                templateUrl: '/public/app/components/contractors/templates/contractors.tpl.html',
                 controller: 'ContractorListCtrl',
                 controllerAs: 'contractor'
             })
+            .state('app.contractors.list', {
+                url: '/list',
+                templateUrl: '/public/app/components/contractors/templates/contractor-list.tpl.html'
+            })
+            .state('app.contractors.profile', {
+                url: '/profile/:id',
+                templateUrl: '/public/app/components/contractors/templates/contractor-profile.tpl.html',
+                controller: 'ContractorProfileCtrl',
+                controllerAs: 'profile'
+            })
 
-            .state('app.services-list', {
-                url: '/services-list',
-                templateUrl: '/public/app/components/services/templates/services-list.tpl.html',
+            .state('app.services', {
+                url: '/services',
+                templateUrl: '/public/app/components/services/templates/services.tpl.html',
                 controller: 'ServicesListCtrl',
                 controllerAs: 'services'
             })
+            .state('app.services.list', {
+                url: '/list',
+                templateUrl: '/public/app/components/services/templates/services-list.tpl.html'
+            })
+            .state('app.services.profile', {
+                url: '/profile/:id',
+                templateUrl: '/public/app/components/services/templates/services-profile.tpl.html',
+                controller: 'ServicesProfileCtrl',
+                controllerAs: 'profile'
+            })
 
-            .state('app.tenders-list', {
-                url: '/tenders-list',
-                templateUrl: '/public/app/components/tenders/templates/tenders-list.tpl.html',
+            .state('app.tenders', {
+                url: '/tenders',
+                templateUrl: '/public/app/components/tenders/templates/tenders.tpl.html',
                 controller: 'TendersListCtrl',
                 controllerAs: 'tenders'
+            })
+            .state('app.tenders.list', {
+                url: '/list',
+                templateUrl: '/public/app/components/tenders/templates/tenders-list.tpl.html'
+            })
+            .state('app.tenders.profile', {
+                url: '/profile/:id',
+                templateUrl: '/public/app/components/tenders/templates/tenders-profile.tpl.html',
+                controller: 'TendersProfileCtrl',
+                controllerAs: 'profile'
             });
 
         $urlRouterProvider.otherwise('/login');

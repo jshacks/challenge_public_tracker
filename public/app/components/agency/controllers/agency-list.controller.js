@@ -10,11 +10,16 @@
 
         console.log('AgencyListCtrl');
 
-        $state.go('app.agencies.list');
+        if ($state.current.name === 'app.agencies') {
+            $state.go('app.agencies.list');
+        }
+
+        self.agenciesList = [];
 
         self.getAllAgencies = function getAllAgencies () {
-            api.get('contracts')
+            api.get('agencies')
                 .then(function success (data) {
+<<<<<<< HEAD
                     self.contractsData = data;
                     console.log('data: ', self.contractsData);
 
@@ -36,7 +41,11 @@
                     self.setItemsPerPage = function(num) {
                         self.itemsPerPage = num;
                         self.currentPage = 1;
-                    }
+                    };
+
+                    self.agenciesList = data.data.slice(0, 10);
+                    console.log('data: ', self.agenciesList);
+
                 }, function error (err) {
                     console.log('error: ', err);
                 });
