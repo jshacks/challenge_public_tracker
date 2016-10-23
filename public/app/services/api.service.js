@@ -8,7 +8,7 @@
     function api ($http) {
         var api = {};
 
-        api.apiUrl = 'http://jfvgytocee.localtunnel.me/';
+        api.apiUrl = 'http://4d8e39c0.ngrok.io/';
 
         api.get = function get (url) {
             var request = $http({

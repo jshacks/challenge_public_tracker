@@ -1,0 +1,44 @@
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <main class="main-container-content .col-lg-12">
+
+            <div class="header-title">
+                <h1>Agency</h1>
+            </div>
+
+            <div class="middle-container">
+                <div class="filter-block">
+                    <span>View: <Span>Top</Span> <span>New</span></span>
+                </div>
+            </div>
+            <div class="table-container">
+                <div class="table-row" ng-repeat="item in agency.contractsData.data">
+                    <i class="fa fa-arrow-circle-up arrow" aria-hidden="true"></i>
+                    <div class="main-info">
+                        <img  class="table-image" src="{{item.image}}" alt="user1">
+                        <div class="block-after-image">
+                            <div class="first-line-content">
+                                <h4>{{item.title}}</h4>
+                                <span>theclockarm.com <span class="currency">$10k+</span></span>
+                            </div>
+                            <div class="second-line-content">
+                                <span><b>The Clock Arm</b></span>
+                                <span>1 point 4 days ago</span>
+                                <span><b>1 Comments</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons-at-right">
+                        <span class="comment-count">{{item.commentsCount}}</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+<div ui-view></div>

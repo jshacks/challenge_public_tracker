@@ -1,8 +1,9 @@
 .idea
 bower_components
 node_modules
-public/libs
+public/src/libs
 public/src/fonts
+public/src/libs
 
 
 # Logs
