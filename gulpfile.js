@@ -11,12 +11,17 @@ gulp.task('clean', function () {
 
 gulp.task('copyLibs', function () {
     var libs = [
+
         './bower_components/angular/angular.js',
+        './bower_components/angular-local-storage/dist/angular-local-storage.min.js',
+        './bower_components/jquery/dist/jquery.min.js',
+        './bower_components/bootstrap/dist/js/bootstrap.min.js',
         './bower_components/underscore/underscore.js',
         './bower_components/angular-sanitize/angular-sanitize.min.js',
         './bower_components/angular-animate/angular-animate.min.js',
         './bower_components/ngToast/dist/ngToast.js',
         './bower_components/angular-ui-router/release/angular-ui-router.js',
+        './bower_components/satellizer/dist/satellizer.min.js',
         './bower_components/ngmap/build/scripts/ng-map.min.js',
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
         './bower_components/components-font-awesome/css/font-awesome.min.css'
@@ -44,11 +49,15 @@ gulp.task('inject', function () {
 
     var jsLibs = gulp.src([
         libsDir + 'underscore.js',
+        libsDir + 'jquery.min.js',
+        libsDir + 'bootstrap.min.js',
         libsDir + 'angular.js',
         libsDir + 'angular-sanitize.min.js',
         libsDir + 'angular-animate.min.js',
+        libsDir + 'angular-local-storage.min.js',
         libsDir + 'ngToast.js',
         libsDir + 'angular-ui-router.js',
+        libsDir + 'satellizer.min.js',
         libsDir + 'ng-map.min.js'
     ]);
 
@@ -76,7 +85,7 @@ gulp.task('inject', function () {
 gulp.task('build', ['clean'], function () {
     setTimeout(function () {
         gulp.start(['copyLibs']);
-    }, 1000);
+    }, 2000);
 });
 
 gulp.task('watch', function () {
