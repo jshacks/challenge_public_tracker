@@ -19,7 +19,6 @@
         self.getAllAgencies = function getAllAgencies () {
             api.get('agencies')
                 .then(function success (data) {
-<<<<<<< HEAD
                     self.contractsData = data;
                     console.log('data: ', self.contractsData);
 
