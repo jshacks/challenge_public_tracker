@@ -14,7 +14,7 @@
 
         self.tendersList = [];
 
-        self.getAllAgencies = function getAllAgencies () {
+        self.getAllTenders = function getAllTenders () {
             api.get('tenders')
                 .then(function success (data) {
                     self.tendersList = data.data.slice(0, 10);
@@ -23,6 +23,8 @@
                     console.log('error: ', err);
                 });
         };
+
+        self.getAllTenders();
 
         console.log('TendersListCtrl');
     }
