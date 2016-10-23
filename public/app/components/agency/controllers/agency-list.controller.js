@@ -10,7 +10,9 @@
 
         console.log('AgencyListCtrl');
 
-        $state.go('app.agencies.list');
+        if ($state.current.name === 'app.agencies') {
+            $state.go('app.agencies.list');
+        }
 
         self.getAllAgencies = function getAllAgencies () {
             api.get('contracts')

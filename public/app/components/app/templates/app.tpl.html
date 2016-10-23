@@ -2,25 +2,25 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand pull-left" ui-sref="app.dashboard">Public Trackers</a>
+            <a class="navbar-brand pull-left active-top-link" ui-sref="app.dashboard"><strong>Public Trackers</strong></a>
             <ul class="nav navbar-nav pull-left">
                 <li>
-                    <a ui-sref-active="active-top-link" ui-sref="app.dashboard">Dashboard</a>
+                    <a ui-sref-opts="{reload: true}" ui-sref-active="active-top-link" ui-sref="app.dashboard">Dashboard</a>
                 </li>
                 <li>
-                    <a ui-sref-active="active-top-link" ui-sref="app.agencies">Agency</a>
+                    <a ui-sref-opts="{reload: true}" ui-sref-active="active-top-link" ui-sref="app.agencies.list">Agencies</a>
                 </li>
                 <li>
-                    <a ui-sref-active="active-top-link" ui-sref="app.services-list">Services</a>
+                    <a ui-sref-opts="{reload: true}" ui-sref-active="active-top-link" ui-sref="app.services.list">Services</a>
                 </li>
                 <li>
-                    <a ui-sref-active="active-top-link" ui-sref="app.tenders-list">Tenders</a>
+                    <a ui-sref-opts="{reload: true}" ui-sref-active="active-top-link" ui-sref="app.tenders.list">Tenders</a>
                 </li>
                 <li>
-                    <a ui-sref-active="active-top-link" ui-sref="app.contract-list">Contract</a>
+                    <a ui-sref-opts="{reload: true}" ui-sref-active="active-top-link" ui-sref="app.contracts.list">Contracts</a>
                 </li>
                 <li>
-                    <a ui-sref-active="active-top-link" ui-sref="app.contractor-list">Contractor</a>
+                    <a ui-sref-opts="{reload: true}" ui-sref-active="active-top-link" ui-sref="app.contractors.list">Contractors</a>
                 </li>
             </ul>
         </div>
