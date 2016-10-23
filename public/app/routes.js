@@ -46,7 +46,7 @@
                 templateUrl: '/public/app/components/agency/templates/agency-list.tpl.html'
             })
             .state('app.agencies.profile', {
-                url: '/agencies/:id',
+                url: '/profile/:id',
                 templateUrl: '/public/app/components/agency/templates/agency-profile.tpl.html',
                 controller: 'AgencyProfileCtrl',
                 controllerAs: 'profile'
