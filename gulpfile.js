@@ -23,6 +23,8 @@ gulp.task('copyLibs', function () {
         './bower_components/angular-ui-router/release/angular-ui-router.js',
         './bower_components/satellizer/dist/satellizer.min.js',
         './bower_components/ngmap/build/scripts/ng-map.min.js',
+        './bower_components/angular-bootstrap/ui-bootstrap.min.js',
+        './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
         './bower_components/components-font-awesome/css/font-awesome.min.css'
 
@@ -52,6 +54,8 @@ gulp.task('inject', function () {
         libsDir + 'jquery.min.js',
         libsDir + 'bootstrap.min.js',
         libsDir + 'angular.js',
+        libsDir + 'ui-bootstrap.min.js',
+        libsDir + 'ui-bootstrap-tpls.min.js',
         libsDir + 'angular-sanitize.min.js',
         libsDir + 'angular-animate.min.js',
         libsDir + 'angular-local-storage.min.js',

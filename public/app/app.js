@@ -3,7 +3,8 @@ angular.module('publicTracker', [
     'ngToast',
     'satellizer',
     'ngMap',
-    'LocalStorageModule'
+    'LocalStorageModule',
+    'ui.bootstrap'
 ])
 
 .config(['$authProvider', function($authProvider) {
