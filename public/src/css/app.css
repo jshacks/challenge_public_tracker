@@ -12,6 +12,14 @@ input:hover {
     border: 1px solid gray;
 }
 
+.row {
+    margin: 0;
+}
+
+.padding {
+    padding: 0;
+}
+
 .main-container {
     margin-top: 55px;
     /*width: 1200px;*/
@@ -23,7 +31,21 @@ input:hover {
     margin-top: 0;
 }
 
-.header-container, .header-title {
+.header-title {
+    padding: 10px 0 15px;
+    text-align: center;
+    background: rgba(255,255,255,0.7);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.header-title h1 {
+    margin: 0;
+}
+
+.header-container {
     padding: 30px 0 22px;
     background: rgba(255,255,255,0.7);
     -webkit-border-radius: 5px;
@@ -377,6 +399,10 @@ input::-webkit-input-placeholder {
 .login-register{
     font-size: 11px;
     text-align: center;
+}
+
+.active-top-link {
+    color: #fff !important;
 }
 
 .navigation-avatar {
