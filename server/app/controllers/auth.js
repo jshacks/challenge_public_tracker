@@ -33,8 +33,9 @@ exports.authFacebook = function(req, res) {
     return request(options);
   }).then(function(response) {
     console.log(response);
-    res.json(_.merge(response, {
-      access_token: access_token
-    }));
+    res.json({
+      access_token: access_token,
+      user: response
+    });
   })
 }

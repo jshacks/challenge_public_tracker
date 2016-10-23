@@ -11,22 +11,37 @@ gulp.task('clean', function () {
 
 gulp.task('copyLibs', function () {
     var libs = [
+
         './bower_components/angular/angular.js',
+        './bower_components/angular-local-storage/dist/angular-local-storage.min.js',
+        './bower_components/jquery/dist/jquery.min.js',
+        './bower_components/bootstrap/dist/js/bootstrap.min.js',
         './bower_components/underscore/underscore.js',
         './bower_components/angular-sanitize/angular-sanitize.min.js',
         './bower_components/angular-animate/angular-animate.min.js',
         './bower_components/ngToast/dist/ngToast.js',
         './bower_components/angular-ui-router/release/angular-ui-router.js',
         './bower_components/satellizer/satellizer.min.js',
-        './bower_components/bootstrap/dist/css/bootstrap.min.css'
+        './bower_components/ngmap/build/scripts/ng-map.min.js',
+        './bower_components/bootstrap/dist/css/bootstrap.min.css',
+        './bower_components/components-font-awesome/css/font-awesome.min.css'
+
+    ];
+
+    var fonts = [
+        './bower_components/components-font-awesome/fonts/*.*'
     ];
 
     gulp.src(libs)
-        .pipe(gulp.dest('./public/libs'));
+        .pipe(gulp.dest('./public/src/libs'));
+
+    gulp.src(fonts)
+        .pipe(gulp.dest('./public/src/fonts'));
 });
 
 gulp.task('inject', function () {
-    var libsDir = './public/libs/';
+    var libsDir = './public/src/libs/';
+    var fontsLibsDir = './public/src/fonts';
 
     var target = gulp.src('./public/index.html');
 
@@ -34,17 +49,23 @@ gulp.task('inject', function () {
 
     var jsLibs = gulp.src([
         libsDir + 'underscore.js',
+        libsDir + 'jquery.min.js',
+        libsDir + 'bootstrap.min.js',
         libsDir + 'angular.js',
         libsDir + 'angular-sanitize.min.js',
         libsDir + 'angular-animate.min.js',
+        libsDir + 'angular-local-storage.min.js',
         libsDir + 'ngToast.js',
         libsDir + 'angular-ui-router.js',
-        libsDir + 'satellizer.min.js'
+        libsDir + 'satellizer.min.js',
+        libsDir + 'ng-map.min.js'
     ]);
 
     var app = gulp.src('./public/app/**/*.js');
 
     var cssLibs = gulp.src(libsDir + '*.css');
+
+    var fonts = gulp.src(fontsLibsDir + '*.*');
 
     return target.pipe(inject(jsLibs, {
         relative: false,

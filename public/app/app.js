@@ -1,7 +1,9 @@
 angular.module('publicTracker', [
     'ui.router',
     'ngToast',
-    'satellizer' 
+    'satellizer',
+    'ngMap',
+    'LocalStorageModule'
 ])
 
 .config(['$authProvider', function($authProvider) {
@@ -10,7 +12,12 @@ angular.module('publicTracker', [
     url: '/auth/facebook',
     responseType: 'code'
   });
-}]);
+}])
+
+.config(function (localStorageServiceProvider) {
+  localStorageServiceProvider
+    .setStorageType('localStorage');
+});
 // angular.module('publicTracker').config(['ngToastProvider', function (ngToastProvider) {
 //     ngToastProvider.configure({
 //         dismissOnTimeout: true,
