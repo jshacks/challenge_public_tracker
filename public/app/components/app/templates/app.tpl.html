@@ -8,25 +8,28 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#/app">Public Trackers</a>
+            <a class="navbar-brand" ui-sref="app.dashboard">Public Trackers</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a ui-sref="app.agency-list">Agency</a>
+                    <a ui-sref-active="active-top-link" ui-sref="app.dashboard">Dashboard</a>
                 </li>
                 <li>
-                    <a ui-sref="app.services-list">Services</a>
+                    <a ui-sref-active="active-top-link" ui-sref="app.agencies">Agency</a>
                 </li>
                 <li>
-                    <a ui-sref="app.tenders-list">Tenders</a>
+                    <a ui-sref-active="active-top-link" ui-sref="app.services-list">Services</a>
                 </li>
                 <li>
-                    <a ui-sref="app.contract-list">Contract</a>
+                    <a ui-sref-active="active-top-link" ui-sref="app.tenders-list">Tenders</a>
                 </li>
                 <li>
-                    <a ui-sref="app.contractor-list">Contractor</a>
+                    <a ui-sref-active="active-top-link" ui-sref="app.contract-list">Contract</a>
+                </li>
+                <li>
+                    <a ui-sref-active="active-top-link" ui-sref="app.contractor-list">Contractor</a>
                 </li>
             </ul>
         </div>

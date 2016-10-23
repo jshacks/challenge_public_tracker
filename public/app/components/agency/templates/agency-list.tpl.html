@@ -5,10 +5,6 @@
 
         <main class="main-container-content .col-lg-12">
 
-            <div class="header-title">
-                <h1>Agency</h1>
-            </div>
-
             <div class="middle-container">
                 <div class="filter-block">
                     <span>View: <Span>Top</Span> <span>New</span></span>
@@ -21,7 +17,7 @@
                         <img  class="table-image" src="{{item.image}}" alt="user1">
                         <div class="block-after-image">
                             <div class="first-line-content">
-                                <h4>{{item.title}}</h4>
+                                <h4 ng-click="agency.getById(item._id)">{{item.title}}</h4>
                                 <span>theclockarm.com <span class="currency">$10k+</span></span>
                             </div>
                             <div class="second-line-content">

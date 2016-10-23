@@ -35,11 +35,21 @@
                 controllerAs: 'dashboard'
             })
 
-            .state('app.agency-list', {
-                url: '/agency-list',
-                templateUrl: '/public/app/components/agency/templates/agency-list.tpl.html',
+            .state('app.agencies', {
+                url: '/agencies',
+                templateUrl: '/public/app/components/agency/templates/agencies.tpl.html',
                 controller: 'AgencyListCtrl',
                 controllerAs: 'agency'
+            })
+            .state('app.agencies.list', {
+                url: '/list',
+                templateUrl: '/public/app/components/agency/templates/agency-list.tpl.html'
+            })
+            .state('app.agencies.profile', {
+                url: '/agency/:id',
+                templateUrl: '/public/app/components/agency/templates/agency-profile.tpl.html',
+                controller: 'AgencyProfileCtrl',
+                controllerAs: 'profile'
             })
 
             .state('app.contract-list', {
