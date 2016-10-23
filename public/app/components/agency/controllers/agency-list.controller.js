@@ -14,11 +14,13 @@
             $state.go('app.agencies.list');
         }
 
+        self.agenciesList = [];
+
         self.getAllAgencies = function getAllAgencies () {
-            api.get('contracts')
+            api.get('agencies')
                 .then(function success (data) {
-                    self.contractsData = data;
-                    console.log('data: ', self.contractsData);
+                    self.agenciesList = data.data.slice(0, 10);
+                    console.log('data: ', self.agenciesList);
                 }, function error (err) {
                     console.log('error: ', err);
                 });

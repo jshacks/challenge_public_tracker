@@ -11,13 +11,13 @@
                 </div>
             </div>
             <div class="table-container">
-                <div class="table-row">
+                <div class="table-row" ng-repeat="item in tenders.tendersList">
                     <i class="fa fa-arrow-circle-up arrow" aria-hidden="true"></i>
                     <div class="main-info">
-                        <img  class="table-image" src="public/src/images/images.jpg" alt="user1">
+                        <!-- <img  class="table-image" src="{{item.image}}" alt="user1"> -->
                         <div class="block-after-image">
                             <div class="first-line-content">
-                                <h4>Omega Seamaster Planet Ocean Review</h4>
+                                <h4 ng-click="agency.getById(item._id)">{{item.title}}</h4>
                                 <span>theclockarm.com <span class="currency">$10k+</span></span>
                             </div>
                             <div class="second-line-content">
@@ -28,9 +28,7 @@
                         </div>
                     </div>
                     <div class="icons-at-right">
-                        <img src="public/src/images/images3.jpg" alt="">
-                        <img src="public/src/images/images.jpg" alt="">
-                        <i class="fa fa-comment-o comment-icon" style="position: relative;top: 4px;margin-right: 10px;" aria-hidden="true"></i>
+                        <span class="comment-count">{{item.commentsCount}}</span>
                     </div>
                 </div>
             </div>
