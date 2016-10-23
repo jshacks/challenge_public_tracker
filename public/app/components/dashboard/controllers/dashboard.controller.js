@@ -35,6 +35,39 @@
             }
         ];
 
+        self.uniqueLines = [
+            [
+                {
+                    lat: 47,
+                    lng: 29
+                },
+                {
+                    lat: 46,
+                    lng: 29
+                }
+            ],
+            [
+                {
+                    lat: 47,
+                    lng: 29
+                },
+                {
+                    lat: 47,
+                    lng: 28
+                }
+            ],
+            [
+                {
+                    lat: 47,
+                    lng: 29
+                },
+                {
+                    lat: 46,
+                    lng: 28
+                }
+            ]
+        ];
+
         NgMap.getMap({id: 'dashboard-map'}).then(function(map) {
             console.log(map.getCenter());
             console.log('markers', map.markers);
